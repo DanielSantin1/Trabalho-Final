@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>PHONE STORE</title>
+<meta charset="ISO 8859-1">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div class="Main">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#"><img src="home.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="contato.png"></a>
+                    </li>
+                    <li>
+                        <a href="http://usuarios.upf.br/~182737/"><img src="marketplace.png"></a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html"><img src="user.png"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="tabela">
+                <table>
+                    <table>
+                        <tr>
+                            <th>Informações do produto</th>
+                        </tr>
+                        <tr>
+                            <td>Concentre-se no importante O sistema operacional inovador Android 10 incorpora respostas inteligentes e ações sugeridas para todos os seus aplicativos. Além disso, inclui a função de Bem-Estar Digital e o Tema Escuro, para
+                                que você evite distrações e alcance maior concentração. Maior desempenho Sua memória RAM de 4 GB, lhe permitirá executar vários aplicativos ao mesmo tempo, jogar e navegar rapidamente e sem inconvenientes. Mais para ver
+                                Com sua tela grande IPS de 6.5", desfrute de cores intensas e maior clareza em todo o seu conteúdo. Grande capacidade de armazenamento Com sua memória interna de 64 GB, você sempre terá espaço para armezenar arquivos e
+                                documentos importantes. Além disso, você poderá salvar filmes, séries e vídeos para jogar offline quando quiser.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+
+                        </tr>
+                    </table>
+
+                </table>
+            </div>
+            <div class="overlay"></div>
+            <img src="mobile.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="camera.png">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>48MP</p>
+                    </div>
+                </div>
+
+
+                <div class="feature two">
+                    <img src="processor.png">
+                    <div>
+                        <h1>Processador</h1>
+                        <p>Snapdragon Octa-Core</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="display.png">
+                    <div>
+                        <h1>Display</h1>
+                        <p>6.5" Fullscreen</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="battery.png">
+                    <div>
+                        <h1>Bateria</h1>
+                        <p>5000mAh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controle">
+        <img src="arrow.png" id="up">
+        <h3>Recursos</h3>
+        <img src="arrow.png" id="down">
+    </div>
+
+
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        up.onclick = function() {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        down.onclick = function() {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+
+</html>
